@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body{
+    background-image: url("london.jpg");
+
+}
+.containeruber{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+display: flex;
+justify-content: center;
+    width: 900px;
+    background-color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    background-color: #032048;
+    padding: 20px;
+    color: #ffe7e7;
+    width: 100%;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48pt;
 }
+.galleryblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.623);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+height: 700px;
+    margin-top: -42px;
+    
 }
+.btn{
+    background-color: #ffc0c0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    color: white;
+padding-left: 35px;
+padding-right: 35px;
 
-.App-link {
-  color: #61dafb;
+height: 45px;
+margin: 20px;
+border-radius: 25px;
+box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.815),  inset 0px 10px 27px -8px #7e7e7e, inset 0px -10px 27px -8px #be4c56, 5px 5px 15px 5px rgba(122, 122, 122, 0);;
+
 }
+.btn:hover{
+    background-color: #da9696;
+}
+.image{
+    margin-top: 20px;
+}
+.titeltwo{
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-weight: 300;
+    color: white;
+}
+h2{
+    background-color: #032048;
+    padding: 20px;
+    font-size: 24pt;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.btn2{
+    background-color: #ffc0c0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    color: white;
+padding-left: 35px;
+padding-right: 35px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+height: 45px;
+margin: 20px;
+border-radius: 25px;
+box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.815),  inset 0px 10px 27px -8px #7e7e7e, inset 0px -10px 27px -8px #be4c56, 5px 5px 15px 5px rgba(122, 122, 122, 0);; 
+}
+.remall{
+    display: flex;
+    justify-content: center;
 }
