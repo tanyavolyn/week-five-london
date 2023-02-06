@@ -1,12 +1,14 @@
-import { useState } from 'react';
-import { data } from './data';
-import { target } from './target';
+//import { useState } from 'react';
+//import { data } from './data';
+//import { target } from './target';
+import { Carousel } from "./Carousel";
+import { MustVisit } from "./MustVisit";
 import './App.css';
 
 function App() {
-  const [picture, setPicture] = useState(0);
+/*   const [picture, setPicture] = useState(0);
   const [ziele, setZiele] = useState(target);
-  const {image} = data[picture];
+  const {image} = data[picture]; */
 
 //const indexArr = ziele.map((id, index)=>id.index);
 
@@ -15,7 +17,7 @@ function App() {
 
 
 
-  const backPicture =()=>{
+ /*  const backPicture =()=>{
     setPicture((picture=>{
       picture--;
       if(picture<0) {
@@ -33,23 +35,24 @@ if(picture>data.length-1){
   }
   return picture;
     }))
-  }
+  } */
 
-  const removeZiel =(id)=>{
+/*   const removeZiel =(id)=>{
     let newTargets = ziele.filter((ziel)=>ziel.id !== id);
     
     setZiele(newTargets);
     
    
-  }
+  } */
   return (
     <div className='App'>
 
       <div>
         <h1>LONDON <span className="titeltwo">Meine Reiseziele</span></h1>
       </div>
-
-      <div className='galleryblock'> 
+<Carousel/>
+<MustVisit/>
+{/*       <div className='galleryblock'> 
      
       <button className='btn' onClick={backPicture}>Back</button>
       <div className='image'>
@@ -58,11 +61,11 @@ if(picture>data.length-1){
      <button className='btn' onClick={nextPicture}>Next</button>
 
    
-       </div>
+       </div> */}
 
 
 
-{ziele.map((ziel=>{
+{/* {ziele.map((ziel=>{
   const{id, name, bild, discription} = ziel;
   return(
     <div className="containeruber" key={id}>
@@ -83,11 +86,11 @@ if(picture>data.length-1){
     </div>
   )
 }))
-}
+} */}
 
-<div className='remall'>
+{/* <div className='remall'>
 <button className='btn2' onClick={()=>setZiele([])}>Remove all</button>
-</div>
+</div> */}
 
 
 
