@@ -1,8 +1,8 @@
 //import { useState } from 'react';
 //import { data } from './data';
 //import { target } from './target';
-import { Carousel } from "./Carousel";
-import { MustVisit } from "./MustVisit";
+import  Carousel  from "./Carousel";
+import  MustVisit  from "./MustVisit";
 import './App.css';
 
 function App() {

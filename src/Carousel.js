@@ -1,12 +1,18 @@
 import { data } from './data';
-import { Componet } from 'react';
 import { useState } from 'react';
 
-const {image} = data[picture];
-const [picture, setPicture] = useState(0);
 
 
-const backPicture =()=>{
+
+
+
+const Carousel =()=> {
+
+  const [picture, setPicture] = useState(0);
+  const {image} = data[picture];
+
+    
+  const backPicture =()=>{
     setPicture((picture=>{
       picture--;
       if(picture<0) {
@@ -26,9 +32,6 @@ if(picture>data.length-1){
     }))
   }
 
-export class Carousel extends Componet {
-    
-render(){
     
     return(
     <div className='galleryblock'> 
@@ -49,4 +52,5 @@ render(){
 
 
 
-}
+
+export default Carousel;
